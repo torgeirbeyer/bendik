@@ -1,6 +1,6 @@
 export default {
   type: 'document',
-  title: 'About',
+  title: 'Om',
   name: 'about',
   __experimental_actions: ['create', 'update', /*'delete',*/ 'publish'], 
   fields: [
