@@ -7,8 +7,11 @@
   "author": "Torgeir Beyer <torgeir.beyer@netlife.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "sanity start",
-    "build": "sanity build"
+    "dev": "sanity start",
+    "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
+    "build": "sanity build",
+    "lint": "eslint .",
+    "test": "sanity check"
   },
   "keywords": [
     "sanity"
@@ -17,13 +20,23 @@
     "@sanity/base": "^2.6.4",
     "@sanity/components": "^2.2.6",
     "@sanity/core": "^2.6.2",
+    "@sanity/dashboard": "^2.7.0",
     "@sanity/default-layout": "^2.6.4",
     "@sanity/default-login": "^2.2.6",
     "@sanity/desk-tool": "^2.6.4",
     "@sanity/vision": "^2.2.6",
     "prop-types": "^15.7",
     "react": "^17.0",
-    "react-dom": "^17.0"
+    "react-dom": "^17.0",
+    "sanity-plugin-dashboard-widget-netlify": "^1.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-plugin-react": "^7.23.1"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": "please-use-yarn",
+    "yarn": ">=1.22.4"
+  }
 }

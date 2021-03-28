@@ -1,5 +1,3 @@
-import blockContent from '../objects/blockContent'
-
 export default {
   type: 'document',
   title: 'About',

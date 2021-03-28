@@ -4,7 +4,8 @@ export default () =>
   S.list()
     .title('Sider')
     .items(
-      [S.listItem()
+      [
+        S.listItem()
         .title('Forside')
         .child(
           S.document()
@@ -12,4 +13,5 @@ export default () =>
             .documentId('siteSettings')
         ),
       ...S.documentTypeListItems().filter(listItem => !['siteSettings'].includes(listItem.getId()))
-        ])
+      ]
+    )
