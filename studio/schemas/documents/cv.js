@@ -5,8 +5,13 @@ export default {
   fields: [
     {
       type: 'string',
-      name: 'Tittel',
-      title: 'Tittel'
+      title: 'Tittel',
+      name: 'title',
+    },
+    {
+      type: 'blockContent',
+      title: 'Innhold',
+      name: 'blockContent'
     }
   ]
 }
