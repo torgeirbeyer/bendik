@@ -2,6 +2,7 @@ export default {
   type: 'document',
   title: 'CV',
   name: 'cv',
+  __experimental_actions: ['create', 'update', /*'delete',*/ 'publish'], 
   fields: [
     {
       type: 'string',
