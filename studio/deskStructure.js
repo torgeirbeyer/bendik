@@ -12,6 +12,7 @@ export default () =>
             .schemaType('siteSettings')
             .documentId('siteSettings')
         ),
-      ...S.documentTypeListItems().filter(listItem => !['siteSettings'].includes(listItem.getId()))
-      ]
-    )
+  S.divider(),
+  ...S.documentTypeListItems().filter(listItem => !['siteSettings'].includes(listItem.getId()))
+  ]
+)
