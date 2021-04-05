@@ -2,7 +2,7 @@ import S from '@sanity/desk-tool/structure-builder'
 
 export default () => 
   S.list()
-    .title('Sider')
+    .title('Innhold')
     .items(
       [
         S.listItem()
@@ -12,7 +12,16 @@ export default () =>
             .schemaType('siteSettings')
             .documentId('siteSettings')
         ),
+        S.listItem()
+        .title('Meny')
+        .child(
+          S.document()
+            .schemaType('menu')
+            .documentId('menu')
+        ),
   S.divider(),
-  ...S.documentTypeListItems().filter(listItem => !['siteSettings'].includes(listItem.getId()))
+  ...S.documentTypeListItems()
+    .filter(listItem => !['siteSettings'].includes(listItem.getId()))
+    .filter(listItem => !['menu'].includes(listItem.getId()))
   ]
 )
