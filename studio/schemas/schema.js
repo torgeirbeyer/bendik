@@ -11,10 +11,8 @@ import navItem from './objects/navItem'
 import link from './objects/link'
 
 // Documents
-import about from './documents/about'
-import cv from './documents/cv'
 import project from './documents/project'
-import siteSettings from './documents/siteSettings'
+import frontPage from './documents/frontPage'
 import menu from './documents/menu'
 import pages from './documents/pages'
 
@@ -29,10 +27,8 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    about,
-    cv,
     project,
-    siteSettings,
+    frontPage,
     menu,
     pages,
     // When added to this list, object types can be used as

@@ -9,8 +9,8 @@ export default () =>
         .title('Forside')
         .child(
           S.document()
-            .schemaType('siteSettings')
-            .documentId('siteSettings')
+            .schemaType('frontPage')
+            .documentId('frontPage')
         ),
         S.listItem()
         .title('Meny')
@@ -21,7 +21,7 @@ export default () =>
         ),
   S.divider(),
   ...S.documentTypeListItems()
-    .filter(listItem => !['siteSettings'].includes(listItem.getId()))
+    .filter(listItem => !['frontPage'].includes(listItem.getId()))
     .filter(listItem => !['menu'].includes(listItem.getId()))
   ]
 )

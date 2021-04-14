@@ -1,8 +1,8 @@
 export default {
   type: 'document',
-  title: 'Forside og innstillinger',
+  title: 'Forside',
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'], 
-  name: 'siteSettings',
+  name: 'frontPage',
   fields: [
     {
       type: 'string',
